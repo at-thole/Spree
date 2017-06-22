@@ -1,0 +1,119 @@
+<!-- product main items area start -->
+<div class="product-main-items">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="single-product-img">
+                    <div class="single-pro-main-image">
+                        <a href="#">
+                          <%= image_tag('product/1.png', data: { zoom_image: image_path('product/1.png') }, id: 'optima_zoom') %>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-page-slider hidden-xs">
+                    <div class="single-product-slider">
+                        <a href="#">
+                            <%= image_tag 'product/27.png' %>
+                        </a>
+                    </div>
+                    <div class="single-product-slider">
+                        <a href="#">
+                            <%= image_tag 'product/28.png' %>
+                        </a>
+                    </div>
+                    <div class="single-product-slider">
+                        <a href="#">
+                            <%= image_tag 'product/29.png' %>
+                        </a>
+                    </div>
+                    <div class="single-product-slider">
+                        <a href="#">
+                            <%= image_tag 'product/30.png' %>
+                        </a>
+                    </div>
+                    <div class="single-product-slider">
+                        <a href="#">
+                            <%= image_tag 'product/31.png' %>
+                        </a>
+                    </div>
+                    <div class="single-product-slider">
+                        <a href="#">
+                            <%= image_tag 'product/32.png' %>
+                        </a>
+                    </div>
+                    <div class="single-product-slider">
+                        <a href="#">
+                            <%= image_tag 'product/27.png' %>
+                        </a>
+                    </div>
+                    <div class="single-product-slider">
+                        <a href="#">
+                            <%= image_tag 'product/28.png' %>
+                        </a>
+                    </div>
+                    <div class="single-product-slider">
+                        <a href="#">
+                            <%= image_tag 'product/29.png' %>
+                        </a>
+                    </div>
+                    <div class="single-product-slider">
+                        <a href="#">
+                            <%= image_tag 'product/30.png' %>
+                        </a>
+                    </div>
+                    <div class="single-product-slider">
+                        <a href="#">
+                            <%= image_tag 'product/31.png' %>
+                        </a>
+                    </div>
+                    <div class="single-product-slider">
+                        <a href="#">
+                            <%= image_tag 'product/32.png' %>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="single-product-details">
+                    <a href="#" class="product-name">Fusce aliquam</a>
+                    <div class="list-product-info">
+                        <div class="price-rating">
+                            <div class="ratings">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <a href="#" class="review">1 Review(s)</a>
+                                <a href="#" class="add-review">Add Your Review</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="avalable">
+                        <p>Availability:<span> In stock</span></p>
+                    </div>
+                    <div class="item-price">
+                        <span>$800.00</span>
+                    </div>
+                    <div class="single-product-info">
+                        <p>Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eleifend laoreet congue. Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer enim purus, posuere at ultricies eu, placerat a felis. Suspendisse aliquet urna pretium eros convallis interdum. Quisque in arcu id dui vulputate mollis eget non arcu. Aenean et nulla purus. Mauris vel tellus non nunc mattis lobortis. </p>
+                        <div class="share">
+                            <%= image_tag 'product/share.png' %>
+                        </div>
+                    </div>
+                    <div class="action">
+                        <ul class="add-to-links">
+                            <li> <a href="#"> <i class="fa fa-heart"></i> </a> </li>
+                            <li> <a href="#"> <i class="fa fa-refresh"></i> </a> </li>
+                            <li> <a href="#"> <i class="fa fa-envelope"></i> </a> </li>
+                        </ul>
+                    </div>
+                    <%= render partial: 'spree/products/shared/cart_form' %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- product main items area end -->
+<%= render partial: 'spree/products/shared/upsell' %>
+<%= render partial: 'spree/products/shared/related' %>

@@ -1,0 +1,44 @@
+                        <div class="product-bar">
+                            <ul class="product-navigation" role="tablist">
+                                <li role="presentation" class="active gird">
+
+                                    <a href="#gird" aria-controls="gird" role="tab" data-toggle="tab">
+                                        <span>
+                                            <%= image_tag 'product/grid-primary.png', class: 'primary' %>
+                                            <%= image_tag 'product/grid-secondary.png', class: 'secondary' %>
+                                        </span>
+                                        Gird
+                                    </a>
+                                </li>
+                                <li role="presentation" class="list">
+                                    <a href="#list" aria-controls="list" role="tab" data-toggle="tab">
+                                        <span>
+                                            <%= image_tag 'product/list-primary.png', class: 'primary' %>
+                                            <%= image_tag 'product/list-secondary.png', class: 'secondary' %>
+                                        </span>
+                                        List
+                                     </a>
+                                </li>
+                            </ul>
+                            <div class="sort-by">
+                                <label>Sort By</label>
+                                <select name="sort" >
+                                    <option value="#" selected >Position</option>
+                                    <option value="#">Name</option>
+                                    <option value="#">Price</option>
+                                </select>
+                                <a href="#" title="Set Descending Direction">
+                                    <%= image_tag 'product/i_asc_arrow.gif' %>
+                                </a>
+                            </div>
+                            <div class="limit-product">
+                                <label>Show</label>
+                                <select name="show">
+                                    <option value="#" selected>9</option>
+                                    <option value="#">12</option>
+                                    <option value="#">24</option>
+                                    <option value="#">36</option>
+                                </select>
+                                per page
+                            </div>
+                        </div>

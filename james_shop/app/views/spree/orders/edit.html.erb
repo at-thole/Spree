@@ -1,0 +1,59 @@
+<div class="shopping-cart">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="table-responsive">
+                    <table class="table-bordered table table-hover">
+                        <thead>
+                            <tr>
+                                <th class="cart-item-img"></th>
+                                <th class="cart-product-name">Product Name</th>
+                                <th class="edit"></th>
+                                <th class="move-wishlist">Move to Wishlist</th>
+                                <th class="unit-price">Unit Price</th>
+                                <th class="quantity">Qty</th>
+                                <th class="subtotal">Subtotal</th>
+                                <th class="remove-icon"></th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-center">
+                            <%= render partial: 'spree/orders/shared/line_item' %>
+                        </tbody>
+                    </table>
+                    <div class="shopping-button">
+                        <div class="continue-shopping">
+                            <button type="submit">continue shopping</button>
+                        </div>
+                        <div class="shopping-cart-left">
+                            <button type="submit">Clear Shopping Cart</button>
+                            <button type="submit">Update Shopping Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-4">
+                <div class="discount-code">
+                    <h3>Discount Codes</h3>
+                    <p>Enter your coupon code if you have one.</p>
+                    <input type="text">
+                    <div class="shopping-button">
+                        <button type="submit">apply coupon</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="totals">
+                    <p>subtotal <span>$1,540.00</span> </p>
+                    <h3>Grand Total <span>$1,540.00</span></h3>
+                    <div class="shopping-button">
+                        <button type="submit">proceed to checkout</button>
+                    </div>
+                    <a href="#">Checkout with Multiple Addresses</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
