@@ -21,7 +21,17 @@
     <%= render partial: 'spree/shared/flash' %>
   <% end %>
 
+  <% unless is_homepage? %>
+    <div class="<%= "#{@class_container}" if @class_container.present? %>" data-hook="body-content">
+      <div class="container">
+  <% end  %>
+
   <%= yield %>
+
+  <% unless is_homepage? %>
+      </div>
+    </div>
+  <% end  %>
 
   <%= render partial: 'spree/shared/footer' %>
 
